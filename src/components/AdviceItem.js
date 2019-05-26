@@ -1,12 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const AdviceItem = ({singleAdvice}) => {
-    console.log(singleAdvice);
-    return (
-        <div>
-         single advice
-        </div>
-    );
+const AdviceItem = props => {
+  console.log(props.advice);
+  return <div>{props.advice.advice}</div>;
 };
 
 export default AdviceItem;

@@ -71,5 +71,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 <!-- 
 to do list 
-seems there is a propblem accessing the advice itself from each slip
-when I request it it fails to give the advice and returns undefined. -->
+error at adviceitem.js it seels im trying to do forbidden things with obejcts like listing them as an array  -->
