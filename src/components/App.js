@@ -7,21 +7,29 @@ import AdviceList from "./AdviceList";
 class App extends Component {
     state = {advice : [] };
   onTermSubmit = async term => {
-    const response = await adviceSlip.get("/search/" + term);
-    // response.data.slips
-    console.log(response);
-    this.setState({ advice : response.data.slips});
+    try{
+      const response = await adviceSlip.get("/search/" + term);
+      // response.data.slips
+      console.log(response);
+      this.setState({ advice : response.data.slips});
+    }catch (error){
+      console.error(error);
+    }
+   
+
   };
 
  
 
-  onRandomButtonClick = () => {
-    adviceSlip.get();
+  onRandomButtonClick = async () => {
+    const response = await adviceSlip.get();
+    console.log(response);
   };
 
-  // onLotsAdviceButtonClick= ()=>{
-  //     adviceSlip.get()
-  // };
+   onLotsAdviceButtonClick=  async () => {
+    const response = await adviceSlip.get();
+    console.log(response);
+  };
 
   render() {
     return (
