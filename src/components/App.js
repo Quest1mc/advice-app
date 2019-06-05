@@ -41,6 +41,8 @@ class App extends Component {
   // the api call works but.. it does not push to array lotsOfAdvice
   // and thus cannot yet be rendered via AdviceList
 
+  //this line is to test commit and merge across board 
+
  
 
   render() {

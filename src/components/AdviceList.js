@@ -6,7 +6,7 @@ const AdviceList = ({ advice, message, randomadvice, lotsOfAdvice }) => {
   console.log(randomadvice);
 
  
-
+  //this line is to test commit and merge across board 
   return (
     <div>
       <h1>
