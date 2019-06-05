@@ -11,7 +11,7 @@ const AdviceList = ({ advice, message, randomadvice, lotsOfAdvice }) => {
     <div>
       <h1>
         {randomadvice.advice}
-        {lotsOfAdvice}|| {lotsOfAdvice.advice}; 
+        {lotsOfAdvice} {lotsOfAdvice.advice}
 {/* not sure aboyut this ^^^^^ */}
         {advice && (
           <div>
