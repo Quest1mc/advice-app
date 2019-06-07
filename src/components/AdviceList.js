@@ -3,7 +3,7 @@ import AdviceItem from "./AdviceItem";
 
 const AdviceList = ({ advice, message, randomadvice, lotsOfAdvice }) => {
   // console.log(advice);
-  console.log(randomadvice);
+  // console.log(randomadvice);
 
  
   //this line is to test commit and merge across board 
@@ -11,7 +11,10 @@ const AdviceList = ({ advice, message, randomadvice, lotsOfAdvice }) => {
     <div>
       <h1>
         {randomadvice.advice}
-        {lotsOfAdvice} {lotsOfAdvice.advice}
+         {lotsOfAdvice.map(singleAdvice => {
+              // console.log(singleAdvice)
+              return <AdviceItem advice={singleAdvice} />;
+            })}
 {/* not sure aboyut this ^^^^^ */}
         {advice && (
           <div>

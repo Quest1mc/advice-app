@@ -24,17 +24,18 @@ class App extends Component {
 
   onRandomButtonClick = async () => {
     const response = await adviceSlip.get();
-    console.log(response);
+    // console.log(response);
     this.setState({ randomadvice : response.data.slip});
   };
 
    onLotsAdviceButtonClick=  async () => {
      for (var i=0;i<10;i++){
       const response = await adviceSlip.get();
-      console.log(response);
+      // console.log(response);
      
-      this.setState({ lotsOfAdvice :[], response });
-      console.log(this.state.lotsOfAdvice);
+      this.setState({ lotsOfAdvice :[...this.state.lotsOfAdvice,response.data.slip]});
+      
+      // console.log(this.state.lotsOfAdvice);
      }
   };
 
