@@ -1,12 +1,14 @@
 import React from "react";
 import AdviceItem from "./AdviceItem";
 
+
+
 const AdviceList = ({ advice, message, randomadvice, lotsOfAdvice }) => {
   // console.log(advice);
   // console.log(randomadvice);
-
+// reset();
  
-  //this line is to test commit and merge across board 
+
   return (
     <div>
       <h1>
