@@ -71,4 +71,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 <!-- 
 to do list 
-error at adviceitem.js it seels im trying to do forbidden things with obejcts like listing them as an array  -->
+clear function and add keys to arrays(slip_id)  -->
